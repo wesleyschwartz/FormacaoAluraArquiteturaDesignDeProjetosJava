@@ -1,0 +1,7 @@
+package src.main.java.com.compasso.loja.orcamento;
+
+import java.math.BigDecimal;
+
+public interface Orcavel {
+    BigDecimal getValor();
+}
