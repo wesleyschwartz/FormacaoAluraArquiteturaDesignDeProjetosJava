@@ -1,8 +1,7 @@
 package br.com.alura.service;
 
 import br.com.alura.model.Funcionario;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -10,11 +9,19 @@ import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BonusServiceTest {
+    private Funcionario funcionario;
+    private BonusService bonusService;
+    private BigDecimal bigDecimal;
+    @BeforeEach
+    void setUp() {
+        this.funcionario =new Funcionario("Arthur", LocalDate.now(), bigDecimal);
+        this.bonusService = new BonusService();
+    }
+
 
     @Test
     void bonusDeveriaSerZeroParaFuncionarioComSalarioAlto() {
-        Funcionario funcionario = new Funcionario("Arthur", LocalDate.now(), new BigDecimal("25000"));
-        BonusService bonusService = new BonusService();
+        this.funcionario.setSalario(new BigDecimal("25000"));
         Assertions.assertThrows(IllegalArgumentException.class, () -> bonusService.calcularBonus(funcionario));
         try {
             bonusService.calcularBonus(funcionario);
@@ -26,16 +33,14 @@ class BonusServiceTest {
 
     @Test
     void bonusDeveriaSer10PorcentoDoSalario() {
-        Funcionario funcionario = new Funcionario("Arthur", LocalDate.now(), new BigDecimal("2500"));
-        BonusService bonusService = new BonusService();
+        this.funcionario.setSalario(new BigDecimal("2500"));
         BigDecimal aumento = bonusService.calcularBonus(funcionario);
         assertEquals(new BigDecimal("250.0"), aumento);
     }
 
     @Test
     void bonusDeveriaSerDezPorcentoParaSalarioDeExatamente10Mil() {
-        Funcionario funcionario = new Funcionario("Arthur", LocalDate.now(), new BigDecimal("1000"));
-        BonusService bonusService = new BonusService();
+       this.funcionario.setSalario(new BigDecimal("1000"));
         BigDecimal aumento = bonusService.calcularBonus(funcionario);
         assertEquals(new BigDecimal("100.0"), aumento);
     }
