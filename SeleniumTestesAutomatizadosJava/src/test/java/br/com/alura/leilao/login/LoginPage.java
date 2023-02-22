@@ -1,16 +1,16 @@
 package br.com.alura.leilao.login;
 
+import br.com.alura.leilao.PageObject;
+import br.com.alura.leilao.leiloes.LeioloesPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
-public class LoginPage {
-    private WebDriver browser;
+public class LoginPage extends PageObject {
+
+    private final static String URL_LOGIN = "http://localhost:8080/login";
 
     public LoginPage() {
-        System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
-        this.browser = new EdgeDriver();
-        this.browser.navigate().to("http://localhost:8080/login");
+        super(null);
+        this.browser.navigate().to(URL_LOGIN);
     }
 
     public void quitBrowser() {
@@ -22,8 +22,9 @@ public class LoginPage {
         this.browser.findElement(By.id("password")).sendKeys(pass);
     }
 
-    public void submiteFormulario() {
+    public LeioloesPage submiteFormulario() {
         this.browser.findElement(By.id("login-form")).submit();
+        return new LeioloesPage(browser);
     }
 
     public String getUrl() {
