@@ -29,3 +29,7 @@ Depedency maven:
 * Um **objeto de página** é uma classe orientada a objetos que serve como uma interface para uma página do seu AUT. Os
   testes então usam os métodos desta classe de objeto de página sempre que precisam interagir com a interface do usuário
   dessa página.
+
+---
+
+## [Certificado](https://cursos.alura.com.br/user/wesleyschwartz/course/selenium-testes-automatizados-aceitacao-java/certificate)
