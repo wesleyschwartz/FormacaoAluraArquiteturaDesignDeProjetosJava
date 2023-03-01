@@ -12,3 +12,5 @@
 * é uma ferramenta que suporta BDD, que é o acrônimo para Behavior Driven Development
 * o Cucumber faz, uma "documentação" executável. Pega as features, interpreta isso através do Gherkin, a linguagem
   natural e transforma em código.
+
+## [Certificado](https://cursos.alura.com.br/certificate/wesleyschwartz/bdd-cucumber-java)
