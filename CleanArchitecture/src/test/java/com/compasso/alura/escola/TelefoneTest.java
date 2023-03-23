@@ -1,5 +1,6 @@
 package com.compasso.alura.escola;
 
+import com.compasso.alura.escola.dominio.aluno.Telefone;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

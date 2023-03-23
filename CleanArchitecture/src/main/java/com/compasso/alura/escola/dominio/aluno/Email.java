@@ -1,4 +1,4 @@
-package com.compasso.alura.escola;
+package com.compasso.alura.escola.dominio.aluno;
 // value object
 public class Email {
     private String endereco;

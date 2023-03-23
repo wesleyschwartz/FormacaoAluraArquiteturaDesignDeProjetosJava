@@ -1,4 +1,4 @@
-package com.compasso.alura.escola;
+package com.compasso.alura.escola.dominio.aluno;
 
 public class Telefone {
     private String ddd;
