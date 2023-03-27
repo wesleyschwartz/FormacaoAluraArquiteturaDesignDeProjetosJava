@@ -26,3 +26,5 @@
     * Interface adapters: Eles têm como função mediar a interação entre a camada mais externa da arquitetura e as
       camadas centrais
     * Frameworks & Drives: bibliotecas, frameworks e quaisquer sistemas externos.
+
+## [Certificado](https://cursos.alura.com.br/user/wesleyschwartz/course/java-clean-architecture/certificate)

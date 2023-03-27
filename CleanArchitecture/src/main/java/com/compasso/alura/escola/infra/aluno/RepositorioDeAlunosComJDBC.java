@@ -1,6 +1,6 @@
 package com.compasso.alura.escola.infra.aluno;
 
-import com.compasso.alura.escola.dominio.AlunoNaoEncontrado;
+import com.compasso.alura.escola.dominio.aluno.AlunoNaoEncontrado;
 import com.compasso.alura.escola.dominio.aluno.*;
 
 import java.sql.Connection;

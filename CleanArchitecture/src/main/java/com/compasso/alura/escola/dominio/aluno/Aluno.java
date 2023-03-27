@@ -8,6 +8,7 @@ public class Aluno {
     private String nome;
     private Email email;
     private List<Telefone> telefoneList = new ArrayList<>();
+    private String senha;
 
     public void adicionarTelefone(String ddd, String numero) {
         this.telefoneList.add(new Telefone(ddd, numero));

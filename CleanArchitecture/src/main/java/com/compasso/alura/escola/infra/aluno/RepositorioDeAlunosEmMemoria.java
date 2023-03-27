@@ -1,6 +1,6 @@
 package com.compasso.alura.escola.infra.aluno;
 
-import com.compasso.alura.escola.dominio.AlunoNaoEncontrado;
+import com.compasso.alura.escola.dominio.aluno.AlunoNaoEncontrado;
 import com.compasso.alura.escola.dominio.aluno.Aluno;
 import com.compasso.alura.escola.dominio.aluno.CPF;
 import com.compasso.alura.escola.dominio.aluno.RepositorioDeAlunos;
