@@ -12,8 +12,8 @@ public class EnviarEmailIndicacaoComJavaMail implements EnviarEmailIndicacao {
     @Override
     public void enviarPara(Aluno indicado) {
         Properties props = new Properties();
-        Parâmetros de conexão com servidor Gmail */
-    /*    props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", "smtp.gmail.com");
+
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class",
                 "javax.net.ssl.SSLSocketFactory");
