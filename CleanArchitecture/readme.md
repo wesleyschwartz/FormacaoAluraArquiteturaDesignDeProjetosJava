@@ -40,8 +40,8 @@ Caracteristicas:
 
 * Foco no domínio
 * Linguagem Ubíqua
-    * Consiste num conjunto de termos que devem ser entendidos tanto por especialistas no domínio (
-      usuários do sistema) como por desenvolvedores
+    * Consiste num conjunto de termos que devem ser entendidos tanto por especialistas no domínio (usuários do sistema)
+      como por desenvolvedores
 * Contexto delimitado
     * Quebrar tais domínios complexos em domínios menores
 * Blocos de construção

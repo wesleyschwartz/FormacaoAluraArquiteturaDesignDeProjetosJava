@@ -3,6 +3,7 @@ package com.compasso.alura.escola.dominio.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
+// AGGREATE ROOT
 public class Aluno {
     private CPF cpf;
     private String nome;
@@ -11,6 +12,9 @@ public class Aluno {
     private String senha;
 
     public void adicionarTelefone(String ddd, String numero) {
+        if (telefoneList.size() == 2) {
+            throw new IllegalArgumentException("Numero de telefones ja atingido!");
+        }
         this.telefoneList.add(new Telefone(ddd, numero));
     }
 
