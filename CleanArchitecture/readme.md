@@ -46,3 +46,5 @@ Caracteristicas:
     * Quebrar tais domínios complexos em domínios menores
 * Blocos de construção
     * Entidades, Objetos de Valor, Serviços, Agregados, Repositórios
+
+## [Certificado](https://cursos.alura.com.br/certificate/wesleyschwartz/java-domain-driven-design-conceitos)
