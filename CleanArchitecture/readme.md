@@ -28,3 +28,23 @@
     * Frameworks & Drives: bibliotecas, frameworks e quaisquer sistemas externos.
 
 ## [Certificado](https://cursos.alura.com.br/user/wesleyschwartz/course/java-clean-architecture/certificate)
+
+## [Java e Domain Driven Design: apresentando os conceitos](https://cursos.alura.com.br/course/java-domain-driven-design-conceitos)
+
+### Domain-Driven Design
+
+Eric Vans propôs o desenvolvimento de sistemas onde o design é centrado em conceitos próximos e alinhados com um domínio
+de negócio.
+
+Caracteristicas:
+
+* Foco no domínio
+* Linguagem Ubíqua
+    * Consiste num conjunto de termos que devem ser entendidos tanto por especialistas no domínio (usuários do sistema)
+      como por desenvolvedores
+* Contexto delimitado
+    * Quebrar tais domínios complexos em domínios menores
+* Blocos de construção
+    * Entidades, Objetos de Valor, Serviços, Agregados, Repositórios
+
+## [Certificado](https://cursos.alura.com.br/certificate/wesleyschwartz/java-domain-driven-design-conceitos)
